@@ -3,24 +3,24 @@
 ## Phase 1: HTML Structure
 
 ### 1.1 Base Document Setup
-- [ ] Create DOCTYPE and html tag with `lang="es"`
-- [ ] Add meta charset UTF-8
-- [ ] Add meta viewport for responsive design
-- [ ] Add meta description
-- [ ] Add page title
-- [ ] Link to `css/style.css`
+- [X] Create DOCTYPE and html tag with `lang="es"`
+- [X] Add meta charset UTF-8
+- [X] Add meta viewport for responsive design
+- [X] Add meta description
+- [X] Add page title
+- [X] Link to `css/style.css`
 
 ### 1.2 Navigation Bar
-- [ ] Create `<header>` with `<nav>` inside
-- [ ] Add unordered list `<ul>` with navigation items
-- [ ] Internal links (4):
+- [X] Create `<header>` with `<nav>` inside
+- [X] Add unordered list `<ul>` with navigation items
+- [X] Internal links (4):
   - `#hero` - Inicio
   - `#about` - Sobre mí
   - `#projects` - Proyectos
   - `#contact` - Contacto
-- [ ] External links (2):
-  - GitHub profile (placeholder URL)
-  - LinkedIn profile (placeholder URL)
+- [X] External links (2):
+  - GitHub profile
+  - LinkedIn profile
 
 ### 1.3 Hero Section (Section 1)
 - [ ] Create `<section id="hero">`
