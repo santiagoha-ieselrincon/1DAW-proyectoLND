@@ -43,8 +43,8 @@
 
 ### 1.5 Projects Section (Section 3)
 - [X] Create `<section id="projects">`
-- [ ] Add `<h2>` section heading
-- [ ] Create 2-3 project cards, each with:
+- [X] Add `<h2>` section heading
+- [X] Create 2-3 project cards, each with:
   - `<article>` wrapper
   - `<figure>` containing:
     - `<img>` with src, alt, width, height
@@ -62,17 +62,17 @@
   - Submit button (`<button type="submit">`)
 
 ### 1.7 Footer
-- [ ] Create `<footer>`
-- [ ] Add copyright text
-- [ ] Duplicate external links (GitHub, LinkedIn)
+- [X] Create `<footer>`
+- [X] Add copyright text
+- [X] Duplicate external links (GitHub, LinkedIn)
 
 ---
 
 ## Phase 2: Minimal CSS
 
 ### 2.1 Setup and Reset
-- [ ] Import Google Font (Inter or similar clean font)
-- [ ] Basic CSS reset:
+- [X] Import Google Font (Inter or similar clean font)
+- [X] Basic CSS reset:
   - `box-sizing: border-box`
   - Remove default margins/padding
   - Set base font-family
@@ -117,16 +117,16 @@
 ## Checklist Summary
 
 **HTML Elements Required:**
-- [x] Semantic tags: header, nav, main, section, article, footer, figure, figcaption
-- [ ] Headings: h1, h2, h3
+- [X] Semantic tags: header, nav, main, section, article, footer, figure, figcaption
+- [X] Headings: h1, h2, h3
 - [ ] Text: strong, em, span
-- [ ] Table: table, thead, tbody, tfoot, tr, th, td
-- [ ] Links: 2 external, 2+ internal
+- [X] Table: table, thead, tbody, tfoot, tr, th, td
+- [X] Links: 2 external, 2+ internal
 - [ ] Images: img with figure/figcaption
 - [ ] Form: form, label, input, textarea, button
 
 **CSS Foundations:**
-- [ ] Google Font imported
+- [X] Google Font imported
 - [ ] CSS variables defined
 - [ ] Sections full viewport height
 - [ ] Basic responsive structure ready for media queries
