@@ -23,26 +23,26 @@
   - LinkedIn profile
 
 ### 1.3 Hero Section (Section 1)
-- [ ] Create `<section id="hero">`
-- [ ] Add `<h1>` with name/title
-- [ ] Add introductory `<p>` paragraph
+- [X] Create `<section id="hero">`
+- [X] Add `<h1>` with name/title
+- [X] Add introductory `<p>` paragraph
 - [ ] Use required text tags:
   - `<strong>` for emphasis on key words
   - `<em>` for italicized terms
   - `<span>` for inline styling hooks
 
 ### 1.4 About/Skills Section (Section 2)
-- [ ] Create `<section id="about">`
-- [ ] Add `<h2>` section heading
-- [ ] Add brief bio paragraph
-- [ ] Create skills table with:
+- [X] Create `<section id="about">`
+- [X] Add `<h2>` section heading
+- [X] Add brief bio paragraph
+- [X] Create skills table with:
   - `<table>` wrapper
   - `<thead>` with column headers (Tecnología, Nivel, Experiencia)
   - `<tbody>` with 4-5 skill rows
   - `<tfoot>` with summary row
 
 ### 1.5 Projects Section (Section 3)
-- [ ] Create `<section id="projects">`
+- [X] Create `<section id="projects">`
 - [ ] Add `<h2>` section heading
 - [ ] Create 2-3 project cards, each with:
   - `<article>` wrapper
