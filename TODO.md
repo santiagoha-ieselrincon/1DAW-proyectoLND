@@ -53,9 +53,9 @@
   - `<p>` project description
 
 ### 1.6 Contact Section (Section 4)
-- [ ] Create `<section id="contact">`
-- [ ] Add `<h2>` section heading
-- [ ] Create `<form>` with:
+- [X] Create `<section id="contact">`
+- [X] Add `<h2>` section heading
+- [X] Create `<form>` with:
   - Name input (`<label>` + `<input type="text">`)
   - Email input (`<label>` + `<input type="email">`)
   - Message textarea (`<label>` + `<textarea>`)
@@ -92,7 +92,7 @@
 - [ ] Style links (color, hover state)
 
 ### 2.4 Layout
-- [ ] Set sections to `min-height: 100vh`
+- [X] Set sections to `min-height: 100vh`
 - [ ] Add padding to sections
 - [ ] Center content with max-width container
 - [ ] Basic flexbox for centering hero content
@@ -123,10 +123,10 @@
 - [X] Table: table, thead, tbody, tfoot, tr, th, td
 - [X] Links: 2 external, 2+ internal
 - [ ] Images: img with figure/figcaption
-- [ ] Form: form, label, input, textarea, button
+- [X] Form: form, label, input, textarea, button
 
 **CSS Foundations:**
 - [X] Google Font imported
 - [ ] CSS variables defined
-- [ ] Sections full viewport height
+- [X] Sections full viewport height
 - [ ] Basic responsive structure ready for media queries
