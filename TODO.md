@@ -68,7 +68,14 @@
 
 ---
 
-## Phase 2: Minimal CSS
+## Phase 2: Minimal CSS (Responsive Foundation)
+
+### Breakpoint Strategy
+
+Three viewport sizes as required:
+- **Mobile**: Default styles (< 768px)
+- **Tablet**: `@media (min-width: 768px)`
+- **Desktop**: `@media (min-width: 1024px)`
 
 ### 2.1 Setup and Reset
 - [X] Import Google Font (Inter or similar clean font)
@@ -78,41 +85,140 @@
   - Set base font-family
 
 ### 2.2 CSS Variables
-- [ ] Define color palette in `:root`:
-  - `--color-bg` (light background)
-  - `--color-text` (dark text)
-  - `--color-accent` (primary accent)
-  - `--color-accent-light` (secondary accent)
-  - `--color-muted` (gray tones)
+- [ ] Define color palette in `:root`
+- [ ] Include spacing scale for consistency
+- [ ] Add transition defaults
 
-### 2.3 Typography
-- [ ] Set base `font-size` on html (16px)
-- [ ] Style headings (h1, h2, h3) sizes
-- [ ] Set line-height for readability
-- [ ] Style links (color, hover state)
+>[!note] averiguar sobre escala y transiciones
 
-### 2.4 Layout
-- [X] Set sections to `min-height: 100vh`
-- [ ] Add padding to sections
-- [ ] Center content with max-width container
-- [ ] Basic flexbox for centering hero content
+```css
+:root {
+  /* Spacing scale */
+  --space-xs: 0.5rem;    /* 8px */
+  --space-sm: 1rem;      /* 16px */
+  --space-md: 1.5rem;    /* 24px */
+  --space-lg: 2rem;      /* 32px */
+  --space-xl: 3rem;      /* 48px */
+  --space-2xl: 4rem;     /* 64px */
 
-### 2.5 Navigation
-- [ ] Position nav (fixed or static for now)
-- [ ] Style nav links inline (flexbox)
-- [ ] Basic hover states
+  /* Container widths */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1200px;
 
-### 2.6 Components
-- [ ] Table styling:
-  - Border-collapse
-  - Cell padding
-  - Header background
-- [ ] Form styling:
-  - Input/textarea padding and border
-  - Full-width inputs
-  - Button base style
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+}
+```
 
 ---
+
+### 2.3 Typography (Responsive)
+- [ ] Fluid font sizes that scale with viewport
+- [ ] Responsive heading hierarchy
+- [ ] Link styles with hover states
+
+**Ejemplo de tipografía para vista móvil**
+
+```css
+/* Base typography - Mobile */
+p {
+  color: var(--color-text-muted);
+}
+
+/* Buscar un estilo interesante para las anchor */
+/*  -- Ejemplo --
+ a { 
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+*/
+```
+
+---
+
+### 2.4 Layout (Responsive Container & Sections)
+- [X] Set sections to `min-height: 100vh`
+- [ ] Responsive padding that increases with viewport
+- [ ] Centered container with max-width
+- [ ] Flexbox centering for hero
+
+### 2.5 Navigation (Responsive)
+- [ ] Mobile: probar alternativas a barra de navegación
+- [ ] Tablet+: fixed position, horizontal layout
+- [ ] Hover states and transitions
+
+---
+
+### 2.6 Projects Grid (Responsive)
+- [ ] Single column 
+- [ ] 2 columns on tablet
+- [ ] 3 columns on desktop
+
+---
+
+>[!note] Valorar diseño de la tabla
+### 2.7 Table (Responsive)
+- [ ] Horizontal scroll wrapper on mobile
+- [ ] Full table visible on tablet+
+
+```css
+/* Table wrapper for mobile scroll */
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  width: 100%;
+  min-width: 500px;           /* forces scroll on small screens */
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: var(--space-sm);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+thead {
+  background: var(--color-bg);
+}
+
+th {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+tfoot {
+  background: var(--color-bg);
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  table {
+    min-width: auto;          /* no forced scroll */
+  }
+}
+```
+
+---
+
+### 2.8 Form (Responsive)
+- [ ] Stacked layout on mobile
+- [ ] Inline labels possible on desktop
+- [ ] Touch-friendly input sizes
+
+### 2.9 Footer
+- [ ] Simple centered layout
+- [ ] Responsive padding
 
 ## Checklist Summary
 
@@ -127,6 +233,12 @@
 
 **CSS Foundations:**
 - [X] Google Font imported
-- [ ] CSS variables defined
+- [X] CSS color variables
 - [X] Sections full viewport height
-- [ ] Basic responsive structure ready for media queries
+- [ ] Responsive typography (scales across 3 breakpoints)
+- [ ] Container with responsive padding
+- [ ] Navigation responsive (scroll mobile → centered tablet → fixed desktop)
+- [ ] Projects grid responsive (1 col → 2 col → 3 col)
+- [ ] Table with horizontal scroll wrapper for mobile
+- [ ] Form with touch-friendly inputs
+- [ ] Media queries at 768px and 1024px
