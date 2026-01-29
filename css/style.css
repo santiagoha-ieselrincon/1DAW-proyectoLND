@@ -31,6 +31,8 @@ section {
 }
 
 .nav-elems a {
+    border-radius: 10px;
+    padding: 0.5em 1em;
   text-decoration: none;
 }
 
@@ -47,6 +49,24 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+.nav-hamburger {
+  margin: 1em;
+  padding: 0.5em;
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 60px;
+  width: 100%;
+  text-align: center;
+  transition: left 0.3s;
+}
+
+.nav-menu.active {
+  left: 0;
 }
 
 h1 {
@@ -147,7 +167,8 @@ footer {
   h3 {
     font-size: 1.5rem;
   } /* 24px */
-  .nav-bar {
+  .nav-menu {
+    position: static;
     height: 3em;
     display: flex;
     align-items: center;
@@ -155,16 +176,15 @@ footer {
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
   }
-  .nav-bar:focus {
+  .nav-hamburger {
+    display: none;
   }
   .nav-elems {
     width: 80%;
-    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
   }
   .nav-elems a {
-    border-radius: 10px;
-    padding: 0.5em 1em;
     transition: background 0.3s ease;
   }
   .nav-elems a:hover {
@@ -174,5 +194,6 @@ footer {
     width: 20%;
     display: flex;
     justify-content: center;
+    gap: 10px;
   }
 }
