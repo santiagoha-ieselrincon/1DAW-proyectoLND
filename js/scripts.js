@@ -21,7 +21,7 @@ THEME_TOGGLE.addEventListener("click", () => {
 });
 
 // Hacer click en el boton esconde/muestra el menu
-NAV_BUTTON.addEventListener("click", () => {
+NAV_BUTTON.addEventListener("click", (e) => {
   NAV_MENU.classList.toggle("active");
   e.stopPropagation(); // Prevent event from bubbling to document
 });
