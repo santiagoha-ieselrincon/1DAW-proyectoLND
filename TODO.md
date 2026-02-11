@@ -83,7 +83,7 @@ Three viewport sizes as required:
 
 - **Mobile**: Default styles (< 768px)
 - **Tablet**: `@media (min-width: 768px)`
-- **Desktop**: `@media (min-width: 1024px)`
+- **Desktop**: `@media (min-width: 1440px)`
 
 ### 2.1 Setup and Reset
 
@@ -97,96 +97,50 @@ Three viewport sizes as required:
 
 - [X] Define color palette in `:root`
 - [X] Include spacing scale for consistency
-- [ ] Add transition defaults
+- [X] Add transition defaults
 
 ### 2.3 Typography (Responsive)
 
-- [ ] Responsive texts (headings, paragraphs, links, etc.)
-- [ ] Link styles with hover states
+- [X] Responsive texts (headings, paragraphs, links, etc.)
+- [X] Link styles with hover states
 
 ### 2.4 Layout (Responsive Container & Sections)
 
 - [x] Set sections to `min-height: 100vh`
-- [ ] Responsive padding that increases with viewport
-- [ ] Centered container with max-width
+- [X] Responsive padding that increases with viewport
+- [X] Centered container with max-width
 - [X] Flexbox centering for hero
 
 ### 2.5 Navigation (Responsive)
 
 - [X] Mobile & tablet: side menu that appears and hides 
 - [X] Desktop: fixed position, horizontal layout
-- [ ] Hover states and transitions
-
----
+- [X] Hover states and transitions
 
 ### 2.6 Projects Grid (Responsive)
 
-- [ ] Single column
-- [ ] 2 columns on tablet
-- [ ] 3 columns on desktop
-
----
-
-> [!note] Valorar diseño de la tabla
+- [X] Diseño responsive
+  - [X] Mobile: 1 column (default)
+  - [X] Tablet (`min-width: 768px`): 2 columns
+  - [X] Desktop (`min-width: 1440px`): 3 columns
+- [X] Keep current image size (no stretching/cropping)
+- [X] Rounded corners and hover effects
+- [X] Card content (title, description, figure) properly spaced
 
 ### 2.7 Table (Responsive)
 
-- [ ] Horizontal scroll wrapper on mobile
-- [ ] Full table visible on tablet+
-
-```css
-/* Table wrapper for mobile scroll */
-.table-wrapper {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-table {
-  width: 100%;
-  min-width: 500px; /* forces scroll on small screens */
-  border-collapse: collapse;
-}
-
-th,
-td {
-  padding: var(--space-sm);
-  text-align: left;
-  border-bottom: 1px solid var(--color-border);
-}
-
-thead {
-  background: var(--color-bg);
-}
-
-th {
-  font-weight: 600;
-  color: var(--color-text);
-}
-
-tfoot {
-  background: var(--color-bg);
-  font-weight: 500;
-}
-
-@media (min-width: 768px) {
-  table {
-    min-width: auto; /* no forced scroll */
-  }
-}
-```
-
----
+- [X] Collapsed column on mobile & tablet
+- [X] Full table visible on desktop+
 
 ### 2.8 Form (Responsive)
 
-- [ ] Stacked layout on mobile
-- [ ] Inline labels possible on desktop
-- [ ] Touch-friendly input sizes
+- [X] Stacked layout
+- [X] Touch-friendly input sizes
 
 ### 2.9 Footer
 
-- [ ] Simple centered layout
-- [ ] Responsive padding
+- [X] Simple centered layout
+- [X] Responsive padding
 
 ## Checklist Summary
 
@@ -197,7 +151,7 @@ tfoot {
 - [ ] Text: strong, em, span
 - [x] Table: table, thead, tbody, tfoot, tr, th, td
 - [x] Links: 2 external, 2+ internal
-- [ ] Images: img with figure/figcaption
+- [X] Images: img with figure/figcaption
 - [x] Form: form, label, input, textarea, button
 
 **CSS Foundations:**
@@ -205,25 +159,20 @@ tfoot {
 - [x] Google Font imported
 - [x] CSS color variables
 - [x] Sections full viewport height
-- [ ] Responsive typography (scales across 3 breakpoints)
-- [ ] Container with responsive padding
-- [ ] Navigation responsive (scroll mobile → centered tablet → fixed desktop)
-- [ ] Projects grid responsive (1 col → 2 col → 3 col)
-- [ ] Table with horizontal scroll wrapper for mobile
-- [ ] Form with touch-friendly inputs
-- [ ] Media queries at 768px and 1024px
+- [X] Responsive typography (scales across 3 breakpoints)
+- [X] Container with responsive padding
+- [X] Responsive navigation menu
+- [X] Projects grid responsive (1 col → 2 col → 3 col)
 
 ---
 
 ## Phase 3: Dark/Light Mode Implementation
 
-- [ ] Light mode displays correctly with default colors
-- [ ] Dark mode displays correctly when system preference is dark
-- [ ] Theme toggle button is visible and styled properly
-- [ ] Clicking toggle switches between light and dark mode
-- [ ] Theme preference persists after page reload
-- [ ] Glassmorphism effects work in both themes
-- [ ] All text is readable in both themes
-- [ ] Form inputs and buttons styled appropriately in both themes
-- [ ] Icons in toggle button change correctly (moon ↔ sun)
-
+- [X] Light mode displays correctly with default colors
+- [X] Dark mode displays correctly when system preference is dark
+- [X] Theme toggle button is visible and styled properly
+- [X] Clicking toggle switches between light and dark mode
+- [X] Glassmorphism effects work in both themes
+- [X] All text is readable in both themes
+- [X] Form inputs and buttons styled appropriately in both themes
+- [X] Fix: Icons in toggle button show incorrectly when system is in dark mode
