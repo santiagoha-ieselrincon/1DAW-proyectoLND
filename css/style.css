@@ -18,12 +18,12 @@
   --transicion-suave: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Colores modo claro */
-  --color-bg: #FEEAC9;
-  --color-bg-alt: #FBEFEF;
+  --color-bg: #feeac9;
+  --color-bg-alt: #fbefef;
   --color-t-principal: #574964;
-  --color-t-muteado: #B77466;
-  --color-acento: #FFA4A4;
-  --color-acento-hover: #DA6C6C;
+  --color-t-muteado: #b77466;
+  --color-acento: #ffa4a4;
+  --color-acento-hover: #da6c6c;
 
   /* efecto transparencia */
   --glass-bg: rgba(255, 255, 255, 0.1);
@@ -415,6 +415,7 @@ tfoot td {
 #hero {
   text-align: center;
   align-items: center;
+  background-image: url(../img/fondo.mp4);
 }
 
 #about {
@@ -464,7 +465,7 @@ figcaption {
 
 .project img {
   border-radius: var(--radius-md);
-  object-fit: contain;    /* mantiene tamaño original sin recortar */
+  object-fit: contain; /* mantiene tamaño original sin recortar */
   max-width: 100%;
   height: auto;
 }

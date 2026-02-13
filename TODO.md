@@ -176,3 +176,16 @@ Three viewport sizes as required:
 - [X] All text is readable in both themes
 - [X] Form inputs and buttons styled appropriately in both themes
 - [X] Fix: Icons in toggle button show incorrectly when system is in dark mode
+
+---
+
+## Phase 4: Adding missing content and more effects
+
+- [ ] Add necessary html content as stated in the guide
+  - [ ] More images to the gallery (projects)
+  - [ ] Video background to at least one section
+  - [ ] Add selector and checkbox inputs to the form
+  - [X] RSS feed 🤮
+- [ ] Add necessary css styles as stated in the guide
+  - [ ] rules for footer for the different screen sizes
+  - [ ] Interesting animations and transitions
