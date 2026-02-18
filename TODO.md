@@ -183,8 +183,8 @@ Three viewport sizes as required:
 
 - [ ] Add necessary html content as stated in the guide
   - [ ] More images to the gallery (projects)
-  - [ ] Video background to at least one section
-  - [ ] Add selector and checkbox inputs to the form
+  - [X] Video background to at least one section
+  - [X] Add selector and checkbox inputs to the form
   - [X] RSS feed 🤮
 - [ ] Add necessary css styles as stated in the guide
   - [ ] rules for footer for the different screen sizes

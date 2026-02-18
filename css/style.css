@@ -325,6 +325,7 @@ label {
 }
 
 input,
+select,
 textarea {
   width: 100%;
   padding: var(--espaciado-xs) var(--espaciado-s);
@@ -337,6 +338,7 @@ textarea {
 }
 
 input:focus,
+select:focus,
 textarea:focus {
   outline: none;
   border-color: var(--color-acento-hover);
@@ -345,6 +347,52 @@ textarea:focus {
 textarea {
   min-height: 150px;
   resize: vertical;
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23ffa4a4' d='M8 11L2 5h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--espaciado-s) center;
+  background-size: 1rem;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+:root[data-theme="dark"] select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%2358a6ff' d='M8 11L2 5h12z'/%3E%3C/svg%3E");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%2358a6ff' d='M8 11L2 5h12z'/%3E%3C/svg%3E");
+  }
+}
+
+fieldset {
+  border: 1px solid var(--color-acento);
+  border-radius: var(--radius-sm);
+  padding: var(--espaciado-s);
+}
+
+legend {
+  padding: 0 var(--espaciado-xs);
+  font-weight: 500;
+}
+
+fieldset label {
+  display: flex;
+  align-items: center;
+  gap: var(--espaciado-xs);
+  font-weight: normal;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  accent-color: var(--color-acento);
+  cursor: pointer;
 }
 
 button[type="submit"] {
@@ -415,7 +463,30 @@ tfoot td {
 #hero {
   text-align: center;
   align-items: center;
-  background-image: url(../img/fondo.mp4);
+  overflow: hidden;
+}
+
+#hero video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% 50%;
+  z-index: -10;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -5;
+}
+
+.hero-text,
+.hero-text p {
+  color: #fff;
 }
 
 #about {

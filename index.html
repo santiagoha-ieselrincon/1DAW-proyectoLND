@@ -46,8 +46,15 @@
 
     <main>
       <section id="hero">
-        <h1>SANTIAGO HIGUITA</h1>
-        <p>Desarrollador Web</p>
+        <!-- "playsinline" es para iOS (no se reproduce en pantalla completa) -->
+        <video autoplay loop muted playsinline>
+          <source src="img/fondo.webm" type="video/webm" />
+          <source src="img/fondo.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-text">
+          <h1>SANTIAGO HIGUITA</h1>
+          <p>Desarrollador Web</p>
+        </div>
       </section>
 
       <section id="about">
@@ -165,6 +172,7 @@
 
       <section id="contact">
         <h2>Ponte en contacto</h2>
+        <!-- TODO: conectar action con Formspree / Netlify Forms / EmailJS -->
         <form action="" method="post">
           <label for="nombre">Nombre:</label>
           <input type="text" name="nombre" id="nombre" />
@@ -172,8 +180,37 @@
           <label for="mail">Mail:</label>
           <input type="email" name="mail" id="mail" />
 
+          <label for="motivo">Motivo del contacto:</label>
+          <select name="motivo" id="motivo" required>
+            <option value="" disabled selected>— Selecciona un motivo —</option>
+            <option value="laboral">Oportunidad laboral</option>
+            <option value="colaboracion">Colaboración en proyecto</option>
+            <option value="consulta">Consulta técnica</option>
+            <option value="otro">Otro</option>
+          </select>
+
           <label for="mensaje">Mensaje:</label>
           <textarea name="mensaje" id="mensaje"></textarea>
+
+          <fieldset>
+            <legend>Tipo de proyecto</legend>
+            <label
+              ><input type="checkbox" name="proyecto[]" value="corporativa" />
+              Web corporativa / informativa</label
+            >
+            <label
+              ><input type="checkbox" name="proyecto[]" value="app" />
+              Aplicación web (SPA)</label
+            >
+            <label
+              ><input type="checkbox" name="proyecto[]" value="api" /> API /
+              Microservicio</label
+            >
+            <label
+              ><input type="checkbox" name="proyecto[]" value="otro" />
+              Otro</label
+            >
+          </fieldset>
 
           <button type="submit">Enviar</button>
         </form>
