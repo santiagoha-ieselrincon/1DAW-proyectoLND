@@ -187,5 +187,5 @@ Three viewport sizes as required:
   - [X] Add selector and checkbox inputs to the form
   - [X] RSS feed 🤮
 - [ ] Add necessary css styles as stated in the guide
-  - [ ] rules for footer for the different screen sizes
+  - [X] rules for footer for the different screen sizes
   - [ ] Interesting animations and transitions

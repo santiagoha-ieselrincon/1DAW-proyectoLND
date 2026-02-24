@@ -141,7 +141,7 @@
           </figure>
         </article>
         <article class="project">
-          <h3>Simón dice</h3>
+          <h3>Simón Dice</h3>
           <p>
             Simple juego de Simón dice hecho con HTML, CSS y JS
             <span>(de los primeros que hice en JS 😖)</span>
@@ -151,7 +151,7 @@
               src="img/simon.jpg"
               alt="Juego de 'Simón dice' con un título, un marcador debajo y el disco con los 4 botones rodeando el botón de inicio"
             />
-            <figcaption>Juego de Simón dice</figcaption>
+            <figcaption>Juego de Simón Dice</figcaption>
           </figure>
         </article>
         <article class="project">
@@ -173,59 +173,74 @@
       <section id="contact">
         <h2>Ponte en contacto</h2>
         <!-- TODO: conectar action con Formspree / Netlify Forms / EmailJS -->
-        <form action="" method="post">
-          <label for="nombre">Nombre:</label>
-          <input type="text" name="nombre" id="nombre" />
+        <form action="#" method="post">
+          <div class="form-izq">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" />
 
-          <label for="mail">Mail:</label>
-          <input type="email" name="mail" id="mail" />
+            <label for="mail">Mail:</label>
+            <input type="email" name="mail" id="mail" />
 
-          <label for="motivo">Motivo del contacto:</label>
-          <select name="motivo" id="motivo" required>
-            <option value="" disabled selected>— Selecciona un motivo —</option>
-            <option value="laboral">Oportunidad laboral</option>
-            <option value="colaboracion">Colaboración en proyecto</option>
-            <option value="consulta">Consulta técnica</option>
-            <option value="otro">Otro</option>
-          </select>
-
-          <label for="mensaje">Mensaje:</label>
-          <textarea name="mensaje" id="mensaje"></textarea>
-
-          <fieldset>
-            <legend>Tipo de proyecto</legend>
-            <label
-              ><input type="checkbox" name="proyecto[]" value="corporativa" />
-              Web corporativa / informativa</label
-            >
-            <label
-              ><input type="checkbox" name="proyecto[]" value="app" />
-              Aplicación web (SPA)</label
-            >
-            <label
-              ><input type="checkbox" name="proyecto[]" value="api" /> API /
-              Microservicio</label
-            >
-            <label
-              ><input type="checkbox" name="proyecto[]" value="otro" />
-              Otro</label
-            >
-          </fieldset>
+            <label for="motivo">Motivo del contacto:</label>
+            <select name="motivo" id="motivo" required>
+              <option value="" disabled selected>
+                — Selecciona un motivo —
+              </option>
+              <option value="laboral">Oportunidad laboral</option>
+              <option value="colaboracion">Colaboración en proyecto</option>
+              <option value="consulta">Consulta técnica</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-dcha">
+            <fieldset>
+              <legend>Tipo de proyecto</legend>
+              <label
+                ><input type="checkbox" name="proyecto[]" value="corporativa" />
+                Web corporativa / informativa</label
+              >
+              <label
+                ><input type="checkbox" name="proyecto[]" value="app" />
+                Aplicación web (SPA)</label
+              >
+              <label
+                ><input type="checkbox" name="proyecto[]" value="api" /> API /
+                Microservicio</label
+              >
+              <label
+                ><input type="checkbox" name="proyecto[]" value="otro" />
+                Otro</label
+              >
+            </fieldset>
+          </div>
+          <div class="form-msg">
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+          </div>
 
           <button type="submit">Enviar</button>
         </form>
       </section>
     </main>
 
+    <button class="feed-toggle" aria-label="Mostrar RSS">
+      <i class="fa-solid fa-rss"></i>
+    </button>
     <div class="feed">
-      <!-- start feedwind code -->
-      <script
-        type="text/javascript"
-        src="https://feed.mikle.com/js/fw-loader.js"
-        preloader-text="Loading"
-        data-fw-param="177134/"
-      ></script>
-      <!-- end feedwind code -->
+      <div class="feed-header">
+        <strong>Últimas noticias</strong>
+        <button class="feed-close" aria-label="Cerrar">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="feed-content">
+        <!-- start feedwind code -->
+        <script
+          src="https://feed.mikle.com/js/fw-loader.js"
+          data-fw-param="177134/"
+        ></script>
+        <!-- end feedwind code -->
+      </div>
     </div>
 
     <aside>
@@ -237,12 +252,6 @@
 
     <footer>
       <p>© 2026 Santiago Higuita Ardila</p>
-      <span class="links">
-        <a href="https://www.linkedin.com/in/higuita-ardila-santiago/"
-          ><i class="fa-brands fa-square-linkedin"></i></a
-        ><a href="https://github.com/santiagoha-ieselrincon/1DAW-proyectoLND"
-          ><i class="fa-brands fa-square-github"></i></a
-      ></span>
     </footer>
 
     <script src="js/scripts.js"></script>
