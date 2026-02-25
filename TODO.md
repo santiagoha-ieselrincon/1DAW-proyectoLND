@@ -181,8 +181,8 @@ Three viewport sizes as required:
 
 ## Phase 4: Adding missing content and more effects
 
-- [ ] Add necessary html content as stated in the guide
-  - [ ] More images to the gallery (projects)
+- [X] Add necessary html content as stated in the guide
+- [X] Logo carousel beneath the skills table (`#about`)
   - [X] Video background to at least one section
   - [X] Add selector and checkbox inputs to the form
   - [X] RSS feed 🤮
