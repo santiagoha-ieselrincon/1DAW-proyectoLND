@@ -104,7 +104,11 @@ document.addEventListener("click", (e) => {
   const isClickInsideFeed = FEED.contains(e.target);
   const isClickOnFeedToggle = FEED_TOGGLE.contains(e.target);
 
-  if (!isClickInsideFeed && !isClickOnFeedToggle && FEED.classList.contains("active")) {
+  if (
+    !isClickInsideFeed &&
+    !isClickOnFeedToggle &&
+    FEED.classList.contains("active")
+  ) {
     FEED.classList.remove("active");
     FEED_TOGGLE.classList.remove("active");
   }
