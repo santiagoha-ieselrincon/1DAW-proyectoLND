@@ -29,7 +29,7 @@
 - [x] Create `<section id="hero">`
 - [x] Add `<h1>` with name/title
 - [x] Add introductory `<p>` paragraph
-- [ ] Use required text tags:
+- [X] Use required text tags:
   - `<strong>` for emphasis on key words
   - `<em>` for italicized terms
   - `<span>` for inline styling hooks
@@ -148,7 +148,7 @@ Three viewport sizes as required:
 
 - [x] Semantic tags: header, nav, main, section, article, footer, figure, figcaption
 - [x] Headings: h1, h2, h3
-- [ ] Text: strong, em, span
+- [X] Text: strong, em, span
 - [x] Table: table, thead, tbody, tfoot, tr, th, td
 - [x] Links: 2 external, 2+ internal
 - [X] Images: img with figure/figcaption
@@ -188,4 +188,4 @@ Three viewport sizes as required:
   - [X] RSS feed 🤮
 - [ ] Add necessary css styles as stated in the guide
   - [X] rules for footer for the different screen sizes
-  - [ ] Interesting animations and transitions
+  - [X] Interesting animations and transitions
